@@ -1,10 +1,10 @@
 #!/bin/sh
 
-MODULENAME=${artifactid}
+MODULENAME=${artifactId}
 BINPATH=${symbol_dollar}(command readlink -f ${symbol_dollar}0 2> /dev/null || command grealpath ${symbol_dollar}0 2> /dev/null)
 APPHOME=${symbol_dollar}(dirname  ${symbol_dollar}(dirname ${symbol_dollar}BINPATH))
 EXAMPLE_CONFIG_PATH=/etc/opt/dans.knaw.nl/${symbol_dollar}MODULENAME/example-config.yml
-CONFIG_PATH=$HOME/.${symbol_dollar}${commandName}.yml
+CONFIG_PATH=$HOME/.${commandName}.yml
 
 java -Ddans.default.config=${symbol_dollar}CONFIG_PATH \
      -Ddans.default.example.config=${symbol_dollar}EXAMPLE_CONFIG_PATH \
