@@ -1,0 +1,25 @@
+site_name: ${artifactId}
+theme:
+  name: readthedocs
+
+repo_name: DANS-KNAW/${artifactId}
+repo_url: https://github.com/DANS-KNAW/${artifactId}
+
+nav:
+  - Manual: index.md
+
+plugins:
+  - markdownextradata
+  - search
+
+markdown_extensions:
+  - attr_list
+  - admonition
+  - codehilite:
+      guess_lang: False
+      use_pygments: False
+  - def_list
+  - footnotes
+  - meta
+  - toc:
+      permalink: True
