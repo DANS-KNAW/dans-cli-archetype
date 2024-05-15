@@ -1,34 +1,35 @@
-dans-module-archetype
-=====================
+dans-cli-archetype
+==================
 
-Generate a skeleton DANS Module.
+Generate a skeleton DANS CLI (Command-Line Interface).
 
 SYNOPSIS
 --------
 ```text
-generate-dans-module.sh
+generate-dans-cli.sh
 ```
 
 DESCRIPTION
 -----------
-Creates a DANS module based on [DropWizard]({{ dropwizard }}){:target=_blank:}. It uses the [maven archetype plugin]({{ mvn_arch_plugin }}){:target=_blank:}.
+Creates a DANS CLI.
 
 
 ARGUMENTS
 ----------
-The `generate-dans-module.sh` script will interactively query you for argument values.
+The `generate-dans-cli.sh` script will interactively query you for argument values.
 
 EXAMPLES
 --------
 
-This assumes that you have copied the `generate-dans-module.sh` script to a directory that is on your `$PATH`. On the Mac that could be `/usr/local/bin`
+This assumes that you have copied the `generate-dans-cli.sh` script to a directory that is on your `$PATH`. On the Mac that could be `/usr/local/bin`
 
 ```text
 cd ~/git/test/
-generate-dans-module.sh
-dans-module-archetype version? (default = 0.0.1-SNAPSHOT):
-Module artifactId: dans-test-module
+generate-dans-cli.sh
+dans-cli-archetype version? (default = 0.1.0-SNAPSHOT):
+Module artifactId: dans-test-cli
 Name module's main package (i.e. the one UNDER nl.knaw.dans): test
+Command name: dans-test-app
 Description (one to four sentences): This is a test module
 [INFO] Scanning for projects...
 [INFO]
@@ -55,7 +56,7 @@ Description (one to four sentences): This is a test module
 [INFO] Using property: projectName = Dans Test Module
 Confirm properties configuration:
 groupId: nl.knaw.dans
-artifactId: dans-test-module
+artifactId: dans-test-cli
 version: 0.0.1-SNAPSHOT
 package: nl.knaw.dans.test
 description: This is a test module
@@ -81,12 +82,12 @@ DEVELOPMENT
 
 Prerequisites:
 
-* Maven 3.3.3 or higher
+* Maven 3.6.3 or higher
 
 Steps:
 
 ```commandline
-git clone https://github.com/DANS-KNAW/dans-module-archetype.git
-cd dans-module-archetype
+git clone https://github.com/DANS-KNAW/dans-cli-archetype.git
+cd dans-cli-archetype
 mvn install
 ```
