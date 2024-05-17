@@ -7,4 +7,4 @@ logging:
     - type: file
       archive: false
       timeZone: system
-      currentLogFilename: /var/opt/dans.knaw.nl/log/${artifactId}/${artifactId}.log
+      currentLogFilename: ${symbol_dollar}{HOME}/${artifactId}.log

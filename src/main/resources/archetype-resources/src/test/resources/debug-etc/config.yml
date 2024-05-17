@@ -8,12 +8,9 @@ ${symbol_pound}
 logging:
   level: INFO
   loggers:
-    "nl.knaw.dans":
-      level: TRACE
+    'nl.knaw.dans': DEBUG
   appenders:
-    - type: console
-      logFormat: "%-5p [%d{ISO8601}] [%t] %c: %m%n%rEx"
-
     - type: file
       archive: false
+      logFormat: "%-5p [%d{ISO8601}] [%t] %c: %m%n%rEx"
       currentLogFilename: data/${artifactId}.log
