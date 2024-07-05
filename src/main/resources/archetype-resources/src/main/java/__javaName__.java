@@ -6,7 +6,7 @@ package ${package};
 
 import lombok.extern.slf4j.Slf4j;
 import nl.knaw.dans.lib.util.AbstractCommandLineApp;
-import nl.knaw.dans.lib.util.CliVersionProvider;
+import nl.knaw.dans.lib.util.PicocliVersionProvider;
 import ${package}.config.${javaName}Config;
 import picocli.AutoComplete.GenerateCompletion;
 import picocli.CommandLine;
@@ -14,7 +14,7 @@ import picocli.CommandLine.Command;
 
 @Command(name = "${commandName}",
          mixinStandardHelpOptions = true,
-         versionProvider = CliVersionProvider.class,
+         versionProvider = PicocliVersionProvider.class,
          description = "${description}")
 @Slf4j
 public class ${javaName} extends AbstractCommandLineApp<${javaName}Config> {
