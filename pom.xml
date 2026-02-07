@@ -25,13 +25,13 @@
         <relativePath />
     </parent>
     <artifactId>dans-cli-archetype</artifactId>
-    <version>0.1.0</version>
+    <version>0.1.1-SNAPSHOT</version>
     <packaging>maven-archetype</packaging>
     <name>DANS CLI Archetype</name>
     <description>Maven archetype for creating a DANS CLI project.</description>
     <scm>
         <developerConnection>scm:git:ssh://github.com/DANS-KNAW/${project.artifactId}</developerConnection>
-        <tag>v0.1.0</tag>
+        <tag>HEAD</tag>
     </scm>
     <repositories>
         <repository>
