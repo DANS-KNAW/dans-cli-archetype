@@ -29,7 +29,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>nl.knaw.dans</groupId>
+            <groupId>nl.datastations</groupId>
             <artifactId>dans-java-utils</artifactId>
         </dependency>
         <dependency>
