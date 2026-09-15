@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
         <groupId>nl.knaw.dans</groupId>
         <artifactId>dd-parent</artifactId>
-        <version>1.12.0</version>
+        <version>3.0.0</version>
     </parent>
 
     <artifactId>${artifactId}</artifactId>
     <version>${version}</version>
 
     <name>${projectName}</name>
-    <url>https://github.com/DANS-KNAW/${artifactId}</url>
     <description>${description}</description>
+    <url>https://github.com/DANS-KNAW/${artifactId}</url>
     <inceptionYear>${inceptionYear}</inceptionYear>
 
     <properties>
@@ -33,8 +33,9 @@
             <artifactId>dans-java-utils</artifactId>
         </dependency>
         <dependency>
-            <groupId>nl.knaw.dans</groupId>
+            <groupId>nl.datastations</groupId>
             <artifactId>dans-validation-lib</artifactId>
+            <version></version>
         </dependency>
         <dependency>
             <groupId>commons-beanutils</groupId>
@@ -88,52 +89,6 @@
         </dependency>
         -->
     </dependencies>
-
-    <repositories>
-        <repository>
-            <id>dans-releases</id>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <url>https://maven.dans.knaw.nl/releases/</url>
-        </repository>
-        <repository>
-            <id>dans-snapshots</id>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <url>https://maven.dans.knaw.nl/snapshots/</url>
-        </repository>
-    </repositories>
-
-    <pluginRepositories>
-        <pluginRepository>
-            <id>dans-releases</id>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <url>https://maven.dans.knaw.nl/releases/</url>
-        </pluginRepository>
-        <pluginRepository>
-            <id>dans-snapshots</id>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <url>https://maven.dans.knaw.nl/snapshots/</url>
-        </pluginRepository>
-    </pluginRepositories>
 
     <build>
         <plugins>

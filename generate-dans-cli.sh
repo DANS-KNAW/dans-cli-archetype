@@ -16,7 +16,7 @@
 #
 
 
-DEFAULT_ARCHETYPE_VERSION=0.1.0-SNAPSHOT
+DEFAULT_ARCHETYPE_VERSION=1.1.0
 
 read -p "dans-cli-archetype version? (default = $DEFAULT_ARCHETYPE_VERSION): " ARCHETYPE_VERSION
 read -p "Module artifactId: " ARTIFACT_ID
