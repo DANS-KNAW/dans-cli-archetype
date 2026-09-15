@@ -35,7 +35,6 @@
         <dependency>
             <groupId>nl.datastations</groupId>
             <artifactId>dans-validation-lib</artifactId>
-            <version></version>
         </dependency>
         <dependency>
             <groupId>commons-beanutils</groupId>
