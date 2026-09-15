@@ -15,8 +15,18 @@
 # limitations under the License.
 #
 
+set -euo pipefail
 
-DEFAULT_ARCHETYPE_VERSION=1.1.0
+# Check requirements
+if ! command -v xmlstarlet &> /dev/null; then
+    echo "xmlstarlet could not be found. Please install it to continue."
+    exit 1
+fi
+
+# Read the module version from the pom.xml file in the same directory into DEFAULT_ARCHETYPE_VERSION
+SCRIPT_DIR=$(dirname "$0")
+DEFAULT_ARCHETYPE_VERSION=$(xmlstarlet sel -N ns=http://maven.apache.org/POM/4.0.0 -t -v '//ns:project/ns:version' "$SCRIPT_DIR/pom.xml")
+
 
 read -p "dans-cli-archetype version? (default = $DEFAULT_ARCHETYPE_VERSION): " ARCHETYPE_VERSION
 read -p "Module artifactId: " ARTIFACT_ID
